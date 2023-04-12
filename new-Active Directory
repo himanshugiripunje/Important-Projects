@@ -2,3 +2,11 @@
 
 - It is an identity and access management solution that allows you to define who can do what in your network.
 - it helps you manage credentials of multiple computers and users in same network/domain.
+- enables you to connect with linux and windows in same network.
+- giving you a single sign-on and centralized management experience across a network of Windows and Linux instances.
+
+
+##why
+- With a single login, you can access different services and resources without logging into each one.
+- with help of that you can access different services at single domain.
+- 
