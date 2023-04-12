@@ -14,3 +14,62 @@
  - can contain only one role
  - one role is for one instance only
  
+ 
+ ##Features of EBS: 
+ - It is availability zone specific, due to it has high performance.
+ - you can change its volume type (gp2 to io2) without facing downtime.
+ - you can expand your ssd volume.
+ 
+ 
+#what is CPU
+---- carries out the instruction from computer program. based upon the instruction it performs logical and arith. operations
+###Functions of CPU in computer.
+- controlling all other parts of machine and sending timing signals.
+- transferring data between memory and i/o devices.
+- fetching data and instructions from memory.
+- decoding instructions
+- performing arthematic and logical operation
+- executing programs and stored in memory.
+
+###what is RAM?
+- Ram is temporary memory bank where your computer stores data it needs to retrieve quickly.
+- computer can access your RAM much faster than your disk data. that's why your ram is important.
+- 
+
+
+#why we Use SSD as Bootable volume?/why not HDD?
+- SSD uses integrated circuit assemblies instead of moving mechanical parts,
+- It can run more quickly, enjoy shorter access time and have lower power consumption than HDD.
+
+
+##why time of booting is very faster in AMI than booting time of our Computers. 
+- Ami Consist preconfigured kernal id and other ram id 
+- it is a copy of original AMI.
+- that why it is very fast.
+
+
+##Difference between Hot storage vs Cold storage?
+- 
+
+##Difference between Region specific and availability zone Specific?
+- Region sp service= you can share your resources within REGION And can access by multiple AZI.
+- Availability Zone Service = you cannot share your resources with other AZ.
+
+
+
+##Terraform what use to manage different different Environment?
+- it uses workspace
+
+
+
+
+
+
+
+
+
+
+
+
+
+
