@@ -9,4 +9,8 @@
 ##why
 - With a single login, you can access different services and resources without logging into each one.
 - with help of that you can access different services at single domain.
-- 
+ 
+ ##what is iam profile ?
+ - can contain only one role
+ - one role is for one instance only
+ 
