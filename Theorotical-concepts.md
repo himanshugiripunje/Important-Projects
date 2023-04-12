@@ -35,7 +35,15 @@
 ###what is RAM?
 - Ram is temporary memory bank where your computer stores data it needs to retrieve quickly.
 - computer can access your RAM much faster than your disk data. that's why your ram is important.
-- 
+- application cannot access without memory. Mem Plays vital role to run app.
+
+##why memory is important?##
+- If there is no memory, the computer will not boot up. It has to have RAM memory to load the instructions the computer needs to complete the boot up.
+-  stores data and instructions that are currently being used by the computer. 
+-  it stores the instruction/processes that are being used by commputer.
+-  When an application is launched, it is loaded into the RAM, where the processor can access its instructions and data quickly.
+-  The amount of RAM available determines the number of applications that can be run simultaneously and the speed at which they can operate.
+-  ram is required to function the computer.
 
 
 #why we Use SSD as Bootable volume?/why not HDD?
@@ -47,6 +55,12 @@
 - Ami Consist preconfigured kernal id and other ram id 
 - it is a copy of original AMI.
 - that why it is very fast.
+
+##what is snapshot?
+- a snapshot refers to a copy or image of a system, disk, file system, or virtual machine at a specific point in time.
+- it is the snapshot of current state of object.
+- it is very usefull in case of roll back to previous state.
+- suppose we have to upgrade the machine, so for that we take snapshot for going wrong something, so you can quickly roll back to previous state.
 
 
 ##Difference between Hot storage vs Cold storage?
