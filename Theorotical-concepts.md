@@ -52,6 +52,14 @@ core:
 -  The amount of RAM available determines the number of applications that can be run simultaneously and the speed at which they can operate.
 -  ram is required to function the computer.
 
+##  ALB vs NlB
+ # *ALB*        
+ - It supports path based routing, can route the request to one or more ports.
+ - It supports dynamic host port mapping.
+ - with public ip is routed from 8080 to 80 port no.
+
+
+
 
 #why we Use SSD as Bootable volume?/why not HDD?
 - SSD uses integrated circuit assemblies instead of moving mechanical parts,
