@@ -16,14 +16,17 @@
  - one role is for one instance only
  
  
- ##*Features of EBS: *
+ ##**Features of EBS:*
  - It is availability zone specific, due to it has high performance.
  - you can change its volume type (gp2 to io2) without facing downtime.
  - you can expand your ssd volume.
  
  
-#*what is CPU*
----- carries out the instruction from computer program. based upon the instruction it performs logical and arith. operations
+#**what is CPU**
+------It handles the core processing tasks in a computer, it defines your processing power. 
+----carries out the instruction from computer program. based upon the instruction it performs
+----- is the brain, taking information, calculating it, and moving it where it needs to go.
+logical and arith. operations
 ###Functions of CPU in computer.
 - controlling all other parts of machine and sending timing signals.
 - transferring data between memory and i/o devices.
@@ -31,6 +34,10 @@
 - decoding instructions.
 - performing arthematic and logical operation
 - executing programs and stored in memory.
+
+core:
+ - the CPU is the core, the typically functions through "instruction cycle" where instructions are pulled from memory, decode into processing language, execute through logical gates of core.  
+
 
 ###what is RAM?
 - Ram is temporary memory bank where your computer stores data it needs to retrieve quickly.
@@ -99,8 +106,21 @@
  - It provides high I/O performance, Low-latency 
  - volume is non-persistent.
  - if instance stop or terminate data will be lost.
+- ideal for for application required high throughput I/O operation.
+- Database, Big data processing.
 
-- ideal for high throughput
+# EBS -
+- is a persistent block level storage.
+- it provides flexible storage options
+- like different type of storage volume, snapshot backups, ability to resize the volume. 
+- it cannot loose your data even if your instance is stopped or terminated.
+- 
+
+#Hpc Workload?
+- highly complex data intensive task, highly complex task that is spread accross compute resources. which each part of task run in parallel. 
+- It can run million of scenarios at once, using TB of data at a time
+-  weather prediction, financial risk modeling
+-  machine learning, deep learning, and autonomous driving.
 
 
 ##Difference between Region specific and availability zone Specific?
