@@ -28,7 +28,7 @@
 - controlling all other parts of machine and sending timing signals.
 - transferring data between memory and i/o devices.
 - fetching data and instructions from memory.
-- decoding instructions
+- decoding instructions.
 - performing arthematic and logical operation
 - executing programs and stored in memory.
 
@@ -53,8 +53,8 @@
 
 ##why time of booting is very faster in AMI than booting time of our Computers. 
 - Ami Consist preconfigured kernal id and other ram id 
-- it is a copy of original AMI.
-- that why it is very fast.
+- time depends on number of factors= size of ami, how recently you have launched that AMI. 
+- images launch for first time will take longer to boot.
 
 ##what is snapshot?
 - a snapshot refers to a copy or image of a system, disk, file system, or virtual machine at a specific point in time.
@@ -64,7 +64,25 @@
 
 
 ##Difference between Hot storage vs Cold storage?
-- 
+- hot storage:
+-      refers to data that is frequently used and accessed, like document on your hard-drive 
+-      it requires fastre hardware, (expensive data)
+-      hourly access, daily.
+-      *ex-* data access by customers or employees.SSD , in-memory database.
+-      fast
+- warm storage:
+-      is data that less frequently access.
+-      weekly access, monthly access
+-      *ex*- data for reporting analytics.
+-      
+
+- cold storage:
+-      refers to data that is inftrequntly access.
+-      inexpensive data,
+-      slowest
+-      quarterly, yearly access
+-      *ex-* this could be data that is archived for compliance reason,cheap, tape storage and 
+-      hard drive
 
 ##Difference between Region specific and availability zone Specific?
 - Region sp service= you can share your resources within REGION And can access by multiple AZI.
