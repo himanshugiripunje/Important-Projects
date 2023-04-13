@@ -64,25 +64,44 @@
 
 
 ##Difference between Hot storage vs Cold storage?
-- hot storage:
+# hot storage:
 -      refers to data that is frequently used and accessed, like document on your hard-drive 
 -      it requires fastre hardware, (expensive data)
 -      hourly access, daily.
--      *ex-* data access by customers or employees.SSD , in-memory database.
--      fast
-- warm storage:
--      is data that less frequently access.
--      weekly access, monthly access
--      *ex*- data for reporting analytics.
--      
+-      *ex-* data access by customers or employees, SSD, in-memory database.
+-      fast.
+-      retrival time is very fast.
 
-- cold storage:
+# warm storage:
+-      is data that less frequently access.
+-      weekly access, monthly access.
+-      *ex*- data for reporting analytics.
+
+
+# cold storage:
 -      refers to data that is inftrequntly access.
 -      inexpensive data,
 -      slowest
 -      quarterly, yearly access
 -      *ex-* this could be data that is archived for compliance reason,cheap, tape storage and 
 -      hard drive
+-      retrieval time is very high
+
+# Throughput:
+- is a measure of how many units of data of information a system can process in a given amount of time.
+- speed with which a specific workload can be completed and response time, 
+-  
+
+# Difference between instance store vs EBS volume?
+- there are two types of volume.
+# instance store - 
+ - It is type of temperory block level storage that is directly attach to ec2 instance.
+ - It provides high I/O performance, Low-latency 
+ - volume is non-persistent.
+ - if instance stop or terminate data will be lost.
+
+- ideal for high throughput
+
 
 ##Difference between Region specific and availability zone Specific?
 - Region sp service= you can share your resources within REGION And can access by multiple AZI.
