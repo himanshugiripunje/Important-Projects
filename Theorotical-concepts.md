@@ -73,6 +73,19 @@ core:
 - DHCP
 
 
+## Protocols:
+are the set of rules for message format and procedures that allow machines and appl to exchange information/data. 
+
+## WHat is Tcp/Ip Protocol:
+- stands Transmission control Protocol/Inetrnet protocol 
+
+
+
+                - Application Layer                     Http/Https, dns dhcp ftp telnet 
+                - Transport Layer                       Tcp Udp
+                - Network Layer                            IP
+                - Network Interface layer                Ethernet, tocken-ring, Other-link-layer protocol
+
 
 ##  ALB vs NlB
  # *ALB*        
@@ -84,6 +97,7 @@ core:
 
 ## *NlB*
  - cannot understands headers/cookies and they do not have any session stickiness
+ - Protocols = TCP/UDP
 
 
 # why we Use SSD as Bootable volume?/why not HDD?
@@ -160,16 +174,6 @@ core:
 - Region sp service= you can share your resources within REGION And can access by multiple AZI.
 - Availability Zone Service = you cannot share your resources with other AZ.
 
-## Protocols:
-are the set of rules for message format and procedures that allow machines and appl to exchange information/data. 
-
-## WHat is Tcp/Ip Protocol:
-- stands Transmission control Protocol/Inetrnet protocol 
-- Application Layer
-- Transport Layer
-- Network Layer
-- Network Interface layer
-- 
 
 ## Terraform what use to manage different different Environment?
 - it uses workspace
