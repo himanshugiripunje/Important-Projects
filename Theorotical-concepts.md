@@ -52,13 +52,29 @@ core:
 -  The amount of RAM available determines the number of applications that can be run simultaneously and the speed at which they can operate.
 -  ram is required to function the computer.
 
+
+## Application layer :
+- It is the Layer through which user interact.
+- It provides services to user.
+
+ # Application layer protocol:-
+-  Telnet - stands for teletype network.
+          - It allow telnet client to access the resources of the Telnet server.
+          - uses Telnet protocol to communicate with remote servers- port=23
+- Ftp:    - stands to file transfer protocol. used to transfer files.
+          - It can facilitate this between any two machine.
+          - Not just a protocol its a program. 
+       
+
 ##  ALB vs NlB
  # *ALB*        
  - It supports path based routing, can route the request to one or more ports.
- - It supports dynamic host port mapping.
+ - It supports Layer 7 protocol. it listens Http/Https that means it usnderstand information carried out by Http/Https.
+ - it will not understand any other 7 protocol.
  - with public ip is routed from 8080 as target to 80 port no as a listener.
 
-
+## *NlB*
+ - cannot understands headers/cookies and they do not have any session stickiness
 
 
 #why we Use SSD as Bootable volume?/why not HDD?
