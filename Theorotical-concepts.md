@@ -78,6 +78,9 @@ are the set of rules for message format and procedures that allow machines and a
 
 ## WHat is Tcp/Ip Protocol:
 - stands Transmission control Protocol/Inetrnet protocol 
+- used for transmission and interconnect our N/w devices to internet.
+- used as communication protocol in a private servers.
+- It mainatains reliability/ of data to be transmitted through network.
 
 
 
@@ -93,12 +96,18 @@ are the set of rules for message format and procedures that allow machines and a
  - It supports Layer 7 protocol. it listens Http/Https that means it usnderstand information carried out by Http/Https.
  - it will not understand any other 7 protocol.
  - with public ip is routed from 8080 as target to 80 port no as a listener.
- - 
+ - requirement like to secure application, ssl termination, TLS offloading.
+ - content based routing -  route traffic on target groups based on the path, host header, or other request attributes.
+ - It supports - http Https ssl
+ - Health check - route traffic away from unhealthy targets
+ - container support - EKS ECS
 
 ## *NlB*
  - cannot understands headers/cookies and they do not have any session stickiness
  - Protocols = TCP/UDP
-
+ - Can Handle higher traffic volume than alb.
+ - It canot able to route traffic based Health check.
+ - It NLB supports TCP, TLS, and UDP protocols.
 
 # why we Use SSD as Bootable volume?/why not HDD?
 - SSD uses integrated circuit assemblies instead of moving mechanical parts,
