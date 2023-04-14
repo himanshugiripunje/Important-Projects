@@ -56,7 +56,7 @@ core:
  # *ALB*        
  - It supports path based routing, can route the request to one or more ports.
  - It supports dynamic host port mapping.
- - with public ip is routed from 8080 to 80 port no.
+ - with public ip is routed from 8080 as target to 80 port no as a listener.
 
 
 
