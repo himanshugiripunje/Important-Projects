@@ -60,11 +60,19 @@ core:
  # Application layer protocol:-
 -  Telnet - stands for teletype network.
           - It allow telnet client to access the resources of the Telnet server.
-          - uses Telnet protocol to communicate with remote servers- port=23
+          - uses Telnet protocol to communicate with remote servers- **port=23**
 - Ftp:    - stands to file transfer protocol. used to transfer files.
           - It can facilitate this between any two machine.
-          - Not just a protocol its a program. 
-       
+          - Not just a protocol its a program.      ==== **port=20,21**
+
+- NFS:    - It stands for Network file system. It allows machines to mount file system over a network and interact with those file system as though they are mounted locally.
+          -  **port no = 2049**
+          - It enables system administrator to consolidates resources onto Centralised network.  - SMtP:   - simple mail transfer protocol. It is Part of Tcp/Ip protocol. 
+          - using process called "store and forward" SMTP moves your email on and Across networks, **25**
+- DNS 
+- DHCP
+
+
 
 ##  ALB vs NlB
  # *ALB*        
@@ -72,6 +80,7 @@ core:
  - It supports Layer 7 protocol. it listens Http/Https that means it usnderstand information carried out by Http/Https.
  - it will not understand any other 7 protocol.
  - with public ip is routed from 8080 as target to 80 port no as a listener.
+ - 
 
 ## *NlB*
  - cannot understands headers/cookies and they do not have any session stickiness
@@ -151,7 +160,16 @@ core:
 - Region sp service= you can share your resources within REGION And can access by multiple AZI.
 - Availability Zone Service = you cannot share your resources with other AZ.
 
+## Protocols:
+are the set of rules for message format and procedures that allow machines and appl to exchange information/data. 
 
+## WHat is Tcp/Ip Protocol:
+- stands Transmission control Protocol/Inetrnet protocol 
+- Application Layer
+- Transport Layer
+- Network Layer
+- Network Interface layer
+- 
 
 ## Terraform what use to manage different different Environment?
 - it uses workspace
