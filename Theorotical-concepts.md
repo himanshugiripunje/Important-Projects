@@ -172,6 +172,18 @@ are the set of rules for message format and procedures that allow machines and a
 - it cannot loose your data even if your instance is stopped or terminated.
 - 
 
+## Types Of EBS volume?
+ # SSD:
+ - volumes optimized for transactional workloads involving frequent read/write operations with       small I/O size, where the dominant performance attribute is IOPS
+ - General purpose/ provision iops.
+ - that balances price and performance of wide variety of workload
+ - system boot volumes
+ - virtual desktops
+ - l
+
+
+
+
 # Hpc Workload?
 - highly complex data intensive task, highly complex task that is spread accross compute resources. which each part of task run in parallel. 
 - It can run million of scenarios at once, using TB of data at a time
