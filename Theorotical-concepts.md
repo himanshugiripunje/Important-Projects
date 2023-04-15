@@ -187,16 +187,26 @@ are the set of rules for message format and procedures that allow machines and a
  # General purpose :
  -  balance price and performance for a wide variety of transactional workloads.
  -  These volumes are ideal for use cases such as boot volumes,
- -  medium-size single instance databases, and development and test environments, virtual desktops.
-
+ -  medium-size scale application, and development and test environments, virtual desktops.
+ -  volume size - 1gb to 16tb
+ -  low-latency provides
+ -  max throughput is 1000 Mb/s
+ -  max iops 16,000 iops/volm
+ -  
+ - 
  # Provision iops:
- - It provision iops as per requirement.
+ - iops can be provisioned.
  - they provides consistent iops rate
  - provides io/intensive workload that are sensitive to storage performance.
  - it helps you to scale tousands of iops per instance.
- - highest performance for mission critical low-latency/ high throughput workloads.
+ - highest performance for mission critical low-latency/ high *throughput* workloads.
  - large database -mongoDB
  - more than 10,000 iops 
+ - 4Gb to 64TB
+ - sub-milisecond latency
+ - max throughput is 4000 Mb/s
+ - max iops 256,000 iops/volm
+ - EBS multi-attach support                                           on Io1 for limited regions and on IO2 for any region. 
  
 
 
