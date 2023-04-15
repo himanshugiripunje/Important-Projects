@@ -172,14 +172,32 @@ are the set of rules for message format and procedures that allow machines and a
 - it cannot loose your data even if your instance is stopped or terminated.
 - you can dynamically increase the size, modify provision iops capacity, change volume type {Gp2, GP3} on live production volume.
 
+# migrate instance from 1 AZ to another?
+- You create an EBS volume in a specific Availability Zone, and then attach it to an instance in that same Availability Zone. To make a volume available outside of the Availability Zone, you can create a snapshot and restore that snapshot to a new volume anywhere in that Region. You can copy snapshots to other Regions and then restore them to new volumes there, making it easier to leverage multiple AWS Regions for geographical expansion, data center migration, and disaster recovery.
+- 
+
+
 ## Types Of EBS volume?
  # SSD:
- - volumes optimized for transactional workloads involving frequent read/write operations with       small I/O size, where the dominant performance attribute is IOPS
+ - volumes optimized for transactional workloads involving frequent read/write operations with small I/O size, where the dominant performance attribute is IOPS
  - General purpose/ provision iops.
  - that balances price and performance of wide variety of workload
  - system boot volumes
  - virtual desktops
- - l
+ # General purpose :
+ -  balance price and performance for a wide variety of transactional workloads.
+ -  These volumes are ideal for use cases such as boot volumes,
+ -  medium-size single instance databases, and development and test environments, virtual desktops.
+
+ # Provision iops:
+ - It provision iops as per requirement.
+ - they provides consistent iops rate
+ - provides io/intensive workload that are sensitive to storage performance.
+ - it helps you to scale tousands of iops per instance.
+ - highest performance for mission critical low-latency/ high throughput workloads.
+ - large database -mongoDB
+ - more than 10,000 iops 
+ 
 
 
 
