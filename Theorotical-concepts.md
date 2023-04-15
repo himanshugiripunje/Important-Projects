@@ -27,7 +27,7 @@
 ----carries out the instruction from computer program. based upon the instruction it performs
 ----- is the brain, taking information, calculating it, and moving it where it needs to go.
 logical and arith. operations
-###Functions of CPU in computer.
+### Functions of CPU in computer.
 - controlling all other parts of machine and sending timing signals.
 - transferring data between memory and i/o devices.
 - fetching data and instructions from memory.
@@ -184,6 +184,7 @@ are the set of rules for message format and procedures that allow machines and a
  - that balances price and performance of wide variety of workload
  - system boot volumes
  - virtual desktops
+ 
  # General purpose :
  -  balance price and performance for a wide variety of transactional workloads.
  -  These volumes are ideal for use cases such as boot volumes,
@@ -192,13 +193,13 @@ are the set of rules for message format and procedures that allow machines and a
  -  low-latency provides
  -  max throughput is 1000 Mb/s
  -  max iops 16,000 iops/volm
+ -  multi-attach not supported.
  -  
  - 
  # Provision iops:
  - iops can be provisioned.
  - they provides consistent iops rate
  - provides io/intensive workload that are sensitive to storage performance.
- - it helps you to scale tousands of iops per instance.
  - highest performance for mission critical low-latency/ high *throughput* workloads.
  - large database -mongoDB
  - more than 10,000 iops 
@@ -206,8 +207,8 @@ are the set of rules for message format and procedures that allow machines and a
  - sub-milisecond latency
  - max throughput is 4000 Mb/s
  - max iops 256,000 iops/volm
- - EBS multi-attach support   ============================================ on Io1 for limited regions and on IO2 for any region. 
- 
+ - EBS multi-attach support                                   ============================================ on Io1 for limited regions and on IO2 for any region. 
+ - 
 
 
 
