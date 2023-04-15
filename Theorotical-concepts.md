@@ -206,7 +206,7 @@ are the set of rules for message format and procedures that allow machines and a
  - sub-milisecond latency
  - max throughput is 4000 Mb/s
  - max iops 256,000 iops/volm
- - EBS multi-attach support                                           on Io1 for limited regions and on IO2 for any region. 
+ - EBS multi-attach support   ============================================ on Io1 for limited regions and on IO2 for any region. 
  
 
 
