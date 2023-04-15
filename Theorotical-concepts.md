@@ -170,7 +170,7 @@ are the set of rules for message format and procedures that allow machines and a
 - it provides flexible storage options
 - like different type of storage volume, snapshot backups, ability to resize the volume. 
 - it cannot loose your data even if your instance is stopped or terminated.
-- 
+- you can dynamically increase the size, modify provision iops capacity, change volume type {Gp2, GP3} on live production volume.
 
 ## Types Of EBS volume?
  # SSD:
