@@ -57,6 +57,10 @@ core:
 ## Application layer :
 - It is the Layer through which user interact.
 - It provides services to user.
+## application 
+## why we use web-application.
+- 
+
 
  # Application layer protocol:-
 -  Telnet - stands for teletype network.
@@ -72,7 +76,6 @@ core:
           - using process called "store and forward" SMTP moves your email on and Across networks, **25**
 - DNS 
 - DHCP
-
 
 ## Protocols:
 are the set of rules for message format and procedures that allow machines and appl to exchange information/data. 
