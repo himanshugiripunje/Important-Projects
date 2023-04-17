@@ -6,7 +6,8 @@
 - enables you to connect with linux and windows in same network.
 - giving you a single sign-on and centralized management experience across a network of Windows and Linux instances.
 
-
+## Types of Identity provider.
+- saml2.O
 ## *why*
 - With a single login, you can access different services and resources without logging into each one.
 - with help of that you can access different services at single domain.
