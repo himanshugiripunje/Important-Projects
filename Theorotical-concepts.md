@@ -129,12 +129,12 @@ are the set of rules for message format and procedures that allow machines and a
 
 ## Difference between Hot storage vs Cold storage?
 # hot storage:
--      refers to data that is frequently used and accessed, like document on your hard-drive 
--      it requires fastre hardware, (expensive data)
--      hourly access, daily.
--      *ex-* data access by customers or employees, SSD, in-memory database.
--      fast.
--      retrival time is very fast.
+    - refers to data that is frequently used and accessed, like document on your hard-drive 
+    - it requires fastre hardware, (expensive data)
+    - hourly access, daily.
+    - *ex-* data access by customers or employees, SSD, in-memory database.
+    - fast.
+    - retrival time is very fast.
 
 # warm storage:
 -      is data that less frequently access.
