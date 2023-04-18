@@ -20,4 +20,4 @@
     - FROM java: 8  
 
 # MAINTAINER: 
-- 
+-  defines the author who is creating this Dockerfile
