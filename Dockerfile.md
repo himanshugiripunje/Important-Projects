@@ -12,11 +12,12 @@
 - its very faster than VM
 
 ## syntax for writing dockerfile
+
  # FROM
 -  statement defines which image to download and start from. 
 -  ITS a base image 
 -  a Dockerfile can have multiple FROM statement. which means docker provides more than one image.
-    
+   
            - FROM java: 8  
 
 # MAINTAINER: 
@@ -25,7 +26,9 @@
 # RUN:
 - The RUN statement defines running a command through the shell.
 - It tells what process will be running inside the container at the run time
--           RUN echo hello 
+        
+            - RUN echo hello 
+
 ## Difference RUN vs CMD
 - RUN commites changes into image.
 - CMD runs command in running container.
@@ -36,7 +39,9 @@
        
 # COPY:
 - 
-# CMD:
+
+ 
+ # CMD:
 - there can be a 1 cmd instruction only.
 - if you list more than one cmd it will take last only one CMD
 -                     CMD["param1", "param2"] (default parameter to entrypoint)
