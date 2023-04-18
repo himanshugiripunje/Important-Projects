@@ -21,3 +21,19 @@
 
 # MAINTAINER: 
 -  defines the author who is creating this Dockerfile
+
+# RUN:
+- The RUN statement defines running a command through the shell.
+- It tells what process will be running inside the container at the run time
+-           RUN echo hello 
+
+# ADD: 
+- copies new files/directories/remote-urls from <src> and add them to the image <dest>.
+- it can add local files, contents of tar archives as well as URLs.
+       
+# COPY:
+- 
+# CMD:
+- there can be a 1 cmd instruction only.
+- if you list more than one cmd it will take last only one CMD
+ 
