@@ -48,6 +48,13 @@
  
                - CMD["param1", "param2"] (default parameter to entrypoint)
  
+ # EXPOSE:
+ - Inform docker that container listens on specified port at runtime.
+ - you can specify whether your port listens on TCP/UDP. if protocol is not specified default is TCP
+ 
+          EXPOSE 80/tcp
+ 
+ 
 
  
  
