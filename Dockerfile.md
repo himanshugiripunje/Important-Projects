@@ -36,6 +36,6 @@
 # CMD:
 - there can be a 1 cmd instruction only.
 - if you list more than one cmd it will take last only one CMD
-                - CMD["param1", "param2"] (default parameter to entrypoint)
+-                     CMD["param1", "param2"] (default parameter to entrypoint)
 
  
