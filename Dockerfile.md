@@ -26,6 +26,9 @@
 - The RUN statement defines running a command through the shell.
 - It tells what process will be running inside the container at the run time
 -           RUN echo hello 
+## Difference RUN vs CMD
+- RUN commites changes into image.
+- CMD runs command in running container.
 
 # ADD: 
 - copies new files/directories/remote-urls from <src> and add them to the image <dest>.
@@ -37,5 +40,9 @@
 - there can be a 1 cmd instruction only.
 - if you list more than one cmd it will take last only one CMD
 -                     CMD["param1", "param2"] (default parameter to entrypoint)
+- 
 
+ 
+ 
+ reference(https://youtu.be/Zb7h7UVgMD8)
  
