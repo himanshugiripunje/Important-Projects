@@ -16,7 +16,8 @@
 -  statement defines which image to download and start from. 
 -  ITS a base image 
 -  a Dockerfile can have multiple FROM statement. which means docker provides more than one image.
-            - FROM java: 8  
+    
+    - FROM java: 8  
 
 # MAINTAINER: 
 - 
