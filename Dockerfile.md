@@ -17,7 +17,7 @@
 -  ITS a base image 
 -  a Dockerfile can have multiple FROM statement. which means docker provides more than one image.
     
-    - FROM java: 8  
+           - FROM java: 8  
 
 # MAINTAINER: 
 -  defines the author who is creating this Dockerfile
