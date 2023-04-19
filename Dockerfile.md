@@ -36,7 +36,7 @@
 # ADD: 
 - copies new files/directories/remote-urls from <src> and add them to the *image* <dest>.
 - so, that image size get increase.
--dir itself is not copied but its containts.
+- dir itself is not copied but its containts.
 - it can add local files, contents of tar archives as well as URLs.
  - if <src> is local tar archive in recognised compressed format (.gzip, .zip, xz) then it is unpacked as a directory and add them to the <dest> files from dir.
                       - ADD hom* /mydir/                             to add all files starting with hom.
@@ -46,6 +46,7 @@
 - copies new files/dir from <src> add them to the *container* <dest>.
 - It just copies new files from local to container.
 - dir itself is not copied but its containts.
+- it cannot add local files, contents of tar archives as well as URLs. 
 
  
  # CMD:
@@ -73,8 +74,7 @@
  **docker run --env <key> = <value>** 
  
  
- #ADD
- - 
+ 
  
 
  
