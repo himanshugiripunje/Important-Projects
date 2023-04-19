@@ -53,6 +53,9 @@ core:
 -  The amount of RAM available determines the number of applications that can be run simultaneously and the speed at which they can operate.
 -  ram is required to function the computer.
 
+# stateless vs statefull
+stateless: A stateless system sends a request to the server and relays the response (or the state) back without storing any information.
+statefull: stateful systems expect a response, track information, and resend the request if no response is received 
 
 ## Application layer :
 - It is the Layer through which user interact.
