@@ -52,6 +52,7 @@
  # CMD: package {httpd}
 - there can be a 1 cmd instruction only.
 - if you list more than one cmd it will take last only one CMD
+- Sets default parameters that can be overridden from the Docker command line interface (CLI) while running container.
                  
  
                - CMD["param1", "param2"] (default parameter to entrypoint)
@@ -83,6 +84,17 @@
  
  ENTRYPOINT command param1 param2  (shell form)
  *shell form* prevent any CMD & RUN command line argument from being used.
+
+ Example:
+ FROM Ubuntu
+ ENTRYPOINT exec top -b ---      > why exec is there 
+ 
+ # Understand  how CMD And ENTRYPOINT interact
+ 
+ - Both cmd & entrypoint instruction tells what comand get executed while running containeer.
+ - ENTRYPOINT defined as executable in container.
+ - CMD should be used as way of defining default argument  for an ENTRYPOINT.or for a Ad-hock command in a container.
+ - CMD will be overriden while running container with local CLI.
  
  
  
