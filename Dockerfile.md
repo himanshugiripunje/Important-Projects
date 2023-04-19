@@ -49,7 +49,7 @@
 - it cannot add local files, contents of tar archives as well as URLs. 
 
  
- # CMD:
+ # CMD: package {httpd}
 - there can be a 1 cmd instruction only.
 - if you list more than one cmd it will take last only one CMD
                  
@@ -73,8 +73,23 @@
  - you can view values using *docker inspect* change them using 
  **docker run --env <key> = <value>** 
  
+ ## ENTRYPOINT: variable pass {yum install}
+ - An ENTRYPOINT allows you to configure a container that will run as an executable.
+ - You can override the ENTRYPOINT instruction using the *docker run --entrypoint flag*.
+ - will always run after the container is initiated.
+ 
+ ENTRYPOINT ["executable", "param1", "param2"](exec form)
+ command line argument to *docker run <image>* will appended after all element in exec form ENTRYPOINT.
+ 
+ ENTRYPOINT command param1 param2  (shell form)
+ *shell form* prevent any CMD & RUN command line argument from being used.
  
  
+ 
+ 
+ 
+
+
  
 
  
