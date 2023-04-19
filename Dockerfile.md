@@ -91,10 +91,33 @@
  
  # Understand  how CMD And ENTRYPOINT interact
  
- - Both cmd & entrypoint instruction tells what comand get executed while running containeer.
+ - Both cmd & entrypoint instruction tells what comand get executed while running containeer
+ - Dockerfile should specify at least 1 of CMD OR ENTRYPOINT-----> either cmd or use ENTRYPOINT
  - ENTRYPOINT defined as executable in container.
- - CMD should be used as way of defining default argument  for an ENTRYPOINT.or for a Ad-hock command in a container.
- - CMD will be overriden while running container with local CLI.
+ - CMD should be used as way of defining default argument  for an ENTRYPOINT. or for a Ad-hock command in a container.
+ - CMD will be overidden while running container with local CLI/ENTRYPOINT.
+ - ENTRYPOINT has the higher priority than CMD.
+ 
+ 
+ 
+ 
+ # VOLUME
+ - the volume instruction creates a mount point with the specified name and marks it as a holding externally mounted volumes from native host.
+ # example
+ FROM ubuntu
+ RUN mkdir myvol
+ RUN echo "hello world" > /myvol/greeting
+ VOLUME myvol
+ 
+ 
+ json array  :
+ VOLUME ["/var/log"]
+
+ plain string :
+ VOLUME /var/log
+ 
+ # USER
+ It sets username (uid), the specifired user for RUN CMD ENTRYPOINT instruction
  
  
  
