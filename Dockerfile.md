@@ -3,6 +3,23 @@
 - used to bundle the program.
 - it is text document containes all instruction that user may create an image from command line.
 
+## Docker images?
+- it is a kind of ready-to-use software read-only template crafted with source codes, libraries, external dependencies needed for software application to run any platform/os.
+- the developer call it snapshot. this snapshot is perfect recipe for developers to build test and deploy the desired app swiftly.
+
+## Docker container?
+- as discussed docker image is read-only image, that can't be executed by themselves or cannot run/start.
+- container is nothing but a box that has ability to run any image.
+- when creat docker container you essentialy endup creating a read-write copy of filesystem inside container.
+
+
+## how docker container differs from image.
+- docker images without containers are like orphans/meaningless. 
+- docker container is runtime instance.
+- docker images can exist in isolation but container cant exist without image.
+- docker image cant be stopped but container can be start/stop.
+-  
+
 
 ## why docker?
 - it mainly help to create and execute containers, self-contained program that are independent from underlying infra
@@ -98,6 +115,10 @@
  - CMD will be overidden while running container with local CLI/ENTRYPOINT.
  - ENTRYPOINT has the higher priority than CMD.
  
+ 
+ ## when to use ENTRYPOINT
+ - when your container will run.
+ - 
  
  
  
