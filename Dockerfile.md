@@ -95,6 +95,7 @@
  - An ENTRYPOINT allows you to configure a container that will run as an executable.
  - You can override the ENTRYPOINT instruction using the *docker run --entrypoint flag*.
  - will always run after the container is initiated.
+ - Docker defaults the entrypoint to /bin/sh -c. This means you’ll end up in a shell session when you start the container.
  
  ENTRYPOINT ["executable", "param1", "param2"](exec form)
  command line argument to *docker run <image>* will appended after all element in exec form ENTRYPOINT.
