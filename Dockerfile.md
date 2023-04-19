@@ -34,11 +34,18 @@
 - CMD runs command in running container.
 
 # ADD: 
-- copies new files/directories/remote-urls from <src> and add them to the image <dest>.
+- copies new files/directories/remote-urls from <src> and add them to the *image* <dest>.
+- so, that image size get increase.
+-dir itself is not copied but its containts.
 - it can add local files, contents of tar archives as well as URLs.
-       
+ - if <src> is local tar archive in recognised compressed format (.gzip, .zip, xz) then it is unpacked as a directory and add them to the <dest> files from dir.
+                      - ADD hom* /mydir/                             to add all files starting with hom.
+                      - ADD hom?.txt /mydir/                         to replace hom.txt
+ 
 # COPY:
-- 
+- copies new files/dir from <src> add them to the *container* <dest>.
+- It just copies new files from local to container.
+- dir itself is not copied but its containts.
 
  
  # CMD:
@@ -52,8 +59,22 @@
  - Inform docker that container listens on specified port at runtime.
  - you can specify whether your port listens on TCP/UDP. if protocol is not specified default is TCP
  
-          EXPOSE 80/tcp
+         -  EXPOSE 80/tcp
  
+ # ENV
+ - sets the environment variable key to value
+      
+        - ENV <KEY> = <VALUE>
+ EXAMPLE:
+        ENV MY_NAME = "john_doe"
+        ENV my_var myvalue
+ - the ENV will persist when container is running from resulting image.
+ - you can view values using *docker inspect* change them using 
+ **docker run --env <key> = <value>** 
+ 
+ 
+ #ADD
+ - 
  
 
  
