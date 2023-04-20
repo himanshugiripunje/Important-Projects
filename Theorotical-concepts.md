@@ -15,7 +15,8 @@
  ## *what is iam profile ?*
  - can contain only one role
  - one role is for one instance only
- 
+ ## What is Rds Read Replica?
+ - this creates a copy data in new database which can be queried without concern. 
  
  ## **Features of EBS:*
  - It is availability zone specific, due to it has high performance.
