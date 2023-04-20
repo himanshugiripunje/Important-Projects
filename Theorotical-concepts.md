@@ -15,9 +15,11 @@
  ## *what is iam profile ?*
  - can contain only one role
  - one role is for one instance only
- ## What is Rds Read Replica?
+ ## What is rds Read Replica?
  - this creates a copy data in new database which can be queried without concern. 
- 
+ ## what is dynamoDB?
+ - which is serverless provide fault tolerance high-availability using monitoring request pattern of region.
+ - 
  ## **Features of EBS:*
  - It is availability zone specific, due to it has high performance.
  - you can change its volume type (gp2 to io2) without facing downtime.
