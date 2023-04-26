@@ -1,6 +1,5 @@
 # Theory-notes
 ## AWS Theory provides
-
 One project that comes  is a web application that was built to provide a platform for online shopping. The application was built using microservices architecture, and each microservice was packaged as a Docker container.
 
 To manage the containers and deploy the application, Kubernetes was used as the container orchestration tool. Kubernetes was responsible for managing the deployment, scaling, and load balancing of the application's microservices.
