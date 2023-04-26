@@ -1,0 +1,15 @@
+		"DYNAMODB"
+1.CREATE TABLE WITH PARTITION KEY: add items which having different attributename only.
+create table --> table name --> partition key --> default setting --> create.
+add items in it    ---> tables --> table_name --> explore items --> create item in form/json --> add item
+give name.
+
+
+2.CREATE TABLE WITH SORT&PARTITION KEY: add items which have same or different name attribute.
+follow steps as above after the partition key --> default setting  --> create.
+add items  -->   with same name.
+
+
+
+3.now, launch instance in that region   -->add ProductCatalog.json file in it -->   create table -->   ProductCatalog --> primary key -- Id --> create table--> now add item by cli mode -->  "aws dynamodb batch-write-item --request-items file:///ProductCatalog --region ap-south-1 --> 
+then, all data would be appear on the table that you created in dynamodb-tables. 
