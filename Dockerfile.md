@@ -141,8 +141,17 @@
  # USER
  It sets username (uid), the specifired user for RUN CMD ENTRYPOINT instruction
  
- 
- 
+ //////////////////////
+ A docker image is a collection of code, libraries, configuration files, etc. for an application. Repositories are used to store the images (storage locations).
+
+Docker containers can be created by downloading images from a repository and executing them. Thus, a container is nothing more than a run-time instance of a particular image
+//////////////////////////
+
+ ## docker image push to docker hub
+ - when building an image 
+ - must specify dockerhub_username -- as a part of image_name
+ - must include this username in the image name 
+ - format should be username/image_name
  
  
 
