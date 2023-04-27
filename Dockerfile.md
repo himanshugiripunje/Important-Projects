@@ -148,10 +148,38 @@ Docker containers can be created by downloading images from a repository and exe
 //////////////////////////
 
  ## docker image push to docker hub
+ - 1stly you have have dockerhub_account.
  - when building an image 
  - must specify dockerhub_username -- as a part of image_name
- - must include this username in the image name 
- - format should be username/image_name
+ - must include this username in the image_name 
+ - format should be {username/image_name}
+ - after this we have to login via
+ 
+      - docker login
+
+Username: madflojo
+Password:
+
+after this
+--> Your password will be stored unencrypted in /root/.docker/config.json.
+
+- then just docker push username/image:tagname
+
+## Pushing to a Non-Docker-Hub Registry
+- Specifying the registry address in the tag name
+
+     - docker build -t registry.example.com/username/image_name
+     
+- Log in to a non-Docker-Hub registry
+
+     - docker login registry.example.com
+     
+- Use the full tag name with push
+
+       - docker push registry.example.com/username/image_name
+       
+       
+
  
  
 
