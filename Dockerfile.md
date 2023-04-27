@@ -155,7 +155,7 @@ Docker containers can be created by downloading images from a repository and exe
  - format should be {username/image_name}
  - after this we have to login via
  
-      - docker login
+           - docker login
 
 Username: madflojo
 Password:
@@ -168,11 +168,11 @@ after this
 ## Pushing to a Non-Docker-Hub Registry
 - Specifying the registry address in the tag name
 
-     - docker build -t registry.example.com/username/image_name
+        - docker build -t registry.example.com/username/image_name
      
 - Log in to a non-Docker-Hub registry
 
-     - docker login registry.example.com
+       - docker login registry.example.com
      
 - Use the full tag name with push
 
