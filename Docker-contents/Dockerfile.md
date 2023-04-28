@@ -185,8 +185,13 @@ after this
  - bridge networks - used within a single host,
  - overlay networks - for multi-host communication.
  - macvlan networks - which are used to connect Docker containers directly to host network interfaces.
- 
 
+ 
+#  when pipeline run it running perticular commands.
+ - 1stly it does
+ - docker inspect -f . node:16-alpine
+ 
+ - docker pull node:16-alpine
 
  
 
