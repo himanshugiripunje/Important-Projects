@@ -179,7 +179,8 @@ after this
        - docker push registry.example.com/username/image_name
        
        
-
+# why docker network?
+ - You can connect a container by name or by ID. Once connected, the container can communicate with other containers in the same network.
  
  
 
