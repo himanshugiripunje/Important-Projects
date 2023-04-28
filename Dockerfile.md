@@ -181,7 +181,10 @@ after this
        
 # why docker network?
  - You can connect a container by name or by ID. Once connected, the container can communicate with other containers in the same network.
- 
+# types of Docker Network?
+ - bridge networks - used within a single host,
+ - overlay networks - for multi-host communication.
+ - macvlan networks - which are used to connect Docker containers directly to host network interfaces.
  
 
 
