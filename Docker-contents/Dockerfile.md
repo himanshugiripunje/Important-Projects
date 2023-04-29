@@ -192,7 +192,7 @@ after this
  - The aim of this docker plugin is to be able to use a Docker host to dynamically provision a docker container as a Jenkins agent node, let that run a single build, then tear-down that node, without the build process.
                                         
  
-                                        - pipeline {
+                                        pipeline {
                                       agent {
                                           docker { image 'node:18.16.0-alpine' }
                                       }
@@ -204,7 +204,29 @@ after this
                                           }
                                       }
                                     } 
-
+## workspace syncronize - to continue using the another stages of Docker. >- you have to use "reuseNode true". 
+                            
+                                       pipeline {
+                                          agent any
+                                          stages {
+                                              stage('Build') {
+                                                  agent {
+                                                      docker {
+                                                          image 'gradle:6.7-jdk11'
+                                                          // Run the container on the node specified at the
+                                                          // top-level of the Pipeline, in the same workspace,
+                                                          // rather than on a new node entirely:
+                                                          reuseNode true
+                                                      }
+                                                  }
+                                                  steps {
+                                                      sh 'gradle --version'
+                                                  }
+                                              }
+                                          }
+                                      }
+                       
+                                             
  
 
  
