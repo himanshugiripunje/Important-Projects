@@ -1,1 +1,22 @@
+FROM ubuntu:latest As build
+# install required packages
+RUN  apt-get update && apt-get install maven git -y
+# clonning repositories
+RUN git clone https://github.com/himanshugiripunje/student-ui.git
+WORKDIR /student-ui
+RUN mvn clean package
+
+# 2nd layer of docker
+FROM alpine
+RUN apk add openjdk8 
+RUN echo "java installed successfully"
+ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.74/bin/apache-tomcat-9.0.74.zip /opt/tomcat-9.zip
+WORKDIR /opt/
+RUN unzip tomcat-9.zip 
+COPY  --from=build /student-ui/target/**.war /opt/apache-tomcat-9.0.74/webapps/student.war
+RUN echo "successfully COPY done*********************************---"
+EXPOSE 8081
+RUN chmod +x apache-tomcat-9.0.74/bin/catalina.sh
+CMD ["apache-tomcat-9.0.74/bin/catalina.sh", "run"]
+
 
