@@ -1,3 +1,5 @@
+# what is the main purpose of docker?
+=  allows you to build, test, and deploy applications quickly
 ## What is dockerfile?
 - is a set of instruction to run the application.
 - used to bundle the program.
