@@ -189,7 +189,19 @@ after this
  
 
  # Docker agent
- - 
+ - The aim of this docker plugin is to be able to use a Docker host to dynamically provision a docker container as a Jenkins agent node, let that run a single build, then tear-down that node, without the build process.
+                                        - pipeline {
+                                      agent {
+                                          docker { image 'node:18.16.0-alpine' }
+                                      }
+                                      stages {
+                                          stage('Test') {
+                                              steps {
+                                                  sh 'node --version'
+                                              }
+                                          }
+                                      }
+                                    } 
 
  
 
