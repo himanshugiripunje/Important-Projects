@@ -204,7 +204,8 @@ after this
                                           }
                                       }
                                     } 
-## workspace syncronize - to continue using the another stages of Docker. >- you have to use "reuseNode true". 
+## workspace syncronize - to continue using the another stages of Docker. 
+ >- you have to use "reuseNode true". 
                             
                                        pipeline {
                                           agent any
@@ -228,7 +229,22 @@ after this
                        
                                              
  
-
+## for mounting your data to container.
+                                             pipeline {
+                                                agent {
+                                                    docker {
+                                                        image 'maven:3.9.0-eclipse-temurin-11'
+                                                        args '-v $HOME/.m2:/root/.m2'
+                                                    }
+                                                }
+                                                stages {
+                                                    stage('Build') {
+                                                        steps {
+                                                            sh 'mvn -B'
+                                                        }
+                                                    }
+                                                }
+                                            }
  
  
  [reference](https://youtu.be/Zb7h7UVgMD8)
