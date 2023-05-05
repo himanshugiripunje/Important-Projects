@@ -1,5 +1,5 @@
-# Theory-notes
-## AWS Theory provides
+## My live Project 
+
 One project that comes  is a web application that was built to provide a platform for online shopping. The application was built using microservices architecture, and each microservice was packaged as a Docker container.
 
 To manage the containers and deploy the application, Kubernetes was used as the container orchestration tool. Kubernetes was responsible for managing the deployment, scaling, and load balancing of the application's microservices.
@@ -14,3 +14,5 @@ Finally, Kubernetes pulled the updated Docker images from the Docker registry an
 # we also use deployment strategy like rolling out for this.
 
 In summary, Docker and Kubernetes were used in this project for containerizing microservices and managing their deployment, scaling, and load balancing. The CI/CD pipeline was set up using Jenkins, which automated the build and deployment processes. This approach made the development and deployment process more efficient, reliable, and scalable.
+
+
