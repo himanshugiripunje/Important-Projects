@@ -59,7 +59,12 @@ login via su - postgres
                
                
 - TimescaleDB provides the ability to schedule the execution of custom stored procedures with user-defined actions. 
-               
+    
+    
+ ## difference timescaledb vs postgresql
+ 
+ - At 200 million rows the insert rate in PostgreSQL is an average of 30K rows per second and only gets worse; at 1 billion rows, it's averaging 5K rows per second. On the other hand, TimescaleDB sustains an average insert rate of 111K rows per second through 1 billion rows of data–a 20x improvement.
+ 
                      
                     
                     
