@@ -29,6 +29,7 @@ login via su - postgres
 
            \c db_name;
            
+           
 -  create table - **in that need to specify primary key**, 
 -         column_name data_type,
 
@@ -42,6 +43,10 @@ login via su - postgres
               salary INT
           );
           
+          
+  - need to see these tables = *to view relation*
+                  
+                   \d
      
 - insert the data inside table
                    
