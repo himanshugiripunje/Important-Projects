@@ -57,6 +57,9 @@ login via su - postgres
 
                SELECT * FROM table_name;
                
+               
+- TimescaleDB provides the ability to schedule the execution of custom stored procedures with user-defined actions. 
+               
                      
                     
                     
