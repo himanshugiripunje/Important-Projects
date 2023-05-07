@@ -66,12 +66,42 @@ login via su - postgres
                
 - TimescaleDB provides the ability to schedule the execution of custom stored procedures with user-defined actions. 
     
- ## time-scale installation
+ ## time-scale installation - check the link below
  - https://packagecloud.io/timescale/timescaledb/packages/ubuntu/jammy/timescaledb-2-postgresql-14_2.10.3~ubuntu22.04_arm64.deb?distro_version_id=237
+
+## after this 
+- time scale automatically install posgresql-14
+
+## connecting with postgresql to timescaledb
+- psql - 
+
+          show config_file;
+          \l
+          
+         
+- locally - 
+## to connect timescaledb
+          
+            echo "shared_preload_libraries = 'timescaledb'" >> /etc/postgresql/14/main/postgresql.conf
+            
+            systemctl restart postgresql
+            
+- psql - 
+          
+            CREATE database tsdb;
+            \c tsdb
+            CREATE EXTENSION IF NOT EXISTS timescaledb;
+            \dx
+- output you have 
+![Screenshot (283)](https://user-images.githubusercontent.com/99471014/236690713-40f8966f-a55e-417f-bfde-9523b65d6793.png)
+
+
+
  ## difference timescaledb vs postgresql
  
  - At 200 million rows the insert rate in PostgreSQL is an average of 30K rows per second and only gets worse; at 1 billion rows, it's averaging 5K rows per second. On the other hand, TimescaleDB sustains an average insert rate of 111K rows per second through 1 billion rows of data–a 20x improvement.
  
+
 ## database tunning
 - it helps to running application faster,  faster means throughput(response-time) 
 - avoid transaction that create bottleneck "or" avoid query that running unnecessarily.
