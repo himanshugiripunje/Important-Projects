@@ -71,6 +71,15 @@ login via su - postgres
  
  - At 200 million rows the insert rate in PostgreSQL is an average of 30K rows per second and only gets worse; at 1 billion rows, it's averaging 5K rows per second. On the other hand, TimescaleDB sustains an average insert rate of 111K rows per second through 1 billion rows of data–a 20x improvement.
  
-                     
+## database tunning
+- it helps to running application faster,  faster means throughput(response-time) 
+- avoid transaction that create bottleneck "or" avoid query that running unnecessarily.
+
+# activities used to optimise / homogenize performance of database
+- good databse design - distribute the db into multiple disk avoid disk overload and increase throughput.
+
+#DBMS tunning 
+- refers to dba expert, refers to configure the memory and processing resources.
+
                     
                     
