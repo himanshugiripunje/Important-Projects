@@ -1,3 +1,15 @@
+# What is DSL in Jenkins?
+- you can describe your jobs in jenkins using groovy based language.
+- Groovy is a scripting language.
+- The Job DSL plugin attempts to solve this problem by allowing jobs to be defined in a programmatic form in a human readable file.
+-  
+-  
+
+
+
+
+
+
 #  when pipeline run it running perticular commands.
  - 1stly it does 
  - docker inspect -f . node:16-alpine
