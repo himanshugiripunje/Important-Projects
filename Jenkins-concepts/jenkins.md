@@ -38,7 +38,14 @@
 # key difference betwween scripted vs declarative pipeline.
 - scripted allows you to inject code 
 - declarative doesnot allow to inject code.
-\
+
+
+# How can we stop a scheduled job from being executed temporarily?
+- Disable the job from the job details page to temporarily stop all scheduled executions & other factors/events from triggering the job and enable it back to resume the job schedules/triggers. 
+- If a job is not required permanently, we can delete the job from the jobs list view page.
+
+
+
 # scripted pipeline
                                            node {
 
