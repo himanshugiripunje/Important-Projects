@@ -2,8 +2,9 @@
 - you can describe your jobs in jenkins using groovy based language.
 - Groovy is a scripting language.
 - The Job DSL plugin attempts to solve this problem by allowing jobs to be defined in a programmatic form in a human readable file.
--  
--  
+
+# why DSL 
+- 
 
 
 
