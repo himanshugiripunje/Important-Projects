@@ -34,12 +34,68 @@
 # why declarative
 -  the declarative Jenkins pipeline doesn't permit a developer to inject code. 
 -  it does not allow developers to code complex groovy, via plugin, shared libraries.
--   
+
+# key difference betwween scripted vs declarative pipeline.
+- scripted allows you to inject code 
+- declarative doesnot allow to inject code.
+\
+# scripted pipeline
+                                           node {
+
+                                        git url: 'https://github.com/jfrogdev/project-examples.git'
+
+                                        // Get Artifactory server instance, defined in the Artifactory Plugin administration page.
+                                        def server = Artifactory.server "SERVER_ID"
+
+                                        // Read the upload spec and upload files to Artifactory.
+                                        def downloadSpec =       
+                                             '''{
+                                             "files": [     
+                                               {
+                                                  "pattern": "libs-snapshot-local/*.zip",
+                                                  "target": "dependencies/",
+                                                  "props": "p1=v1;p2=v2"
+                                               }      
+                                             ]    
+                                         }'''
+
+                                        def buildInfo1 = server.download spec: downloadSpec
+
+                                        // Read the upload spec which was downloaded from github.
+                                        def uploadSpec =
+                                           '''{
+                                           "files": [
+                                             {
+                                                "pattern": "resources/Kermit.*",
+                                                "target": "libs-snapshot-local",
+                                                "props": "p1=v1;p2=v2"
+                                             },
+                                             {
+                                                "pattern": "resources/Frogger.*",
+                                                "target": "libs-snapshot-local"
+                                             }
+                                            ]
+                                         }'''
+
+
+                                        // Upload to Artifactory.
+                                        def buildInfo2 = server.upload spec: uploadSpec
+
+                                        // Merge the upload and download build-info objects.
+                                        buildInfo1.append buildInfo2
+
+                                        // Publish the build to Artifactory
+                                        server.publishBuildInfo buildInfo1
+                                      }
+
+# what is multi-branch pipeline?
+- It is a pipeline job that can be configured to Create a set of Pipeline projects according to the detected branches in one SCM repository.
+- This can be used to configure pipelines for all branches of a single repository 
 
 
 
 
-#  when pipeline run it running perticular commands.
+#  when pipeline run it running perticular commands via docker agent
  - 1stly it does 
  - docker inspect -f . node:16-alpine
  - docker pull node:16-alpine
