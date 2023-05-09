@@ -36,7 +36,7 @@
 -  it does not allow developers to code complex groovy, via plugin, shared libraries.
 
 # key difference betwween scripted vs declarative pipeline.
-- scripted allows you to inject code 
+- scripted allows you to inject code in groovy
 - declarative doesnot allow to inject code.
 
 
