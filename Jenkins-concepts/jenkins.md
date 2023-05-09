@@ -28,12 +28,15 @@
 
 
 # declarative pipeline benifits?
-- A declarative pipeline supports conditional statement usage, allows access to environment variables and provides facilities to add logging and error handling
--  The tradeoff is that declarative pipelines don't allow deep integration into Groovy and Java APIs.
+- A declarative pipeline supports conditional statement usage, allows access to environment variables 
+-  provides facilities to add logging and error handling declaratively.
+- The tradeoff is that declarative pipelines don't allow deep integration into Groovy and Java APIs.
+- it offers programmers to able to do operation in asynchronous way, developer must be able to sequence the operation.
+-  
 
-# why declarative
--  the declarative Jenkins pipeline doesn't permit a developer to inject code. 
--  it does not allow developers to code complex groovy, via plugin, shared libraries.
+
+
+-  
 
 # key difference betwween scripted vs declarative pipeline.
 - scripted allows you to inject code in groovy
