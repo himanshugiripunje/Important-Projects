@@ -39,6 +39,7 @@ uses of service:
 Ingress
 - Make your HTTP (or HTTPS) network service available using a protocol-aware configuration mechanism,
 - that understands web concepts like URIs, hostnames, paths, and more. The Ingress concept lets you map traffic to different backends based on rules you define via the Kubernetes API
+- You can also use Ingress to expose your Service. Ingress is not a Service type, but it acts as the entry point for your cluster. It lets you consolidate your routing rules into a single resource as it can expose multiple services under the same IP address
 
 Ingress Controllers
 - In order for an Ingress to work in your cluster, there must be an ingress controller running. You need to select at least one ingress controller and make sure it is set up in your cluster. 
