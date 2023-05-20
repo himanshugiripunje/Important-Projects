@@ -112,3 +112,11 @@
  - docker runs container and mount on persistenet volume.
  - it runs shell command in it. check version + node --version
  - then stop container and delete the persistent volume.
+
+# What are the three security mechanisms Jenkins uses to authenticate users? / How does jenkins authenticate user?
+*The three mechanisms are as follows:
+
+- Jenkins uses an internal database to store user data and credentials.
+- Jenkins can use a lightweight Directory Access Protocol (LDAP) server to authenticate users.
+- We can configure Jenkins to employ the application server's authentication mechanism upon which we deploy it
+
