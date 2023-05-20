@@ -32,11 +32,8 @@
 -  provides facilities to add logging and error handling declaratively.
 - The tradeoff is that declarative pipelines don't allow deep integration into Groovy and Java APIs.
 - it offers programmers to able to do operation in asynchronous way, developer must be able to sequence the operation.
--  
 
 
-
--  
 
 # key difference betwween scripted vs declarative pipeline.
 - scripted allows you to inject code in groovy
@@ -120,3 +117,5 @@
 - Jenkins can use a lightweight Directory Access Protocol (LDAP) server to authenticate users.
 - We can configure Jenkins to employ the application server's authentication mechanism upon which we deploy it
 
+# How to see docker image contents?
+                    - docker run -it image_name sh
