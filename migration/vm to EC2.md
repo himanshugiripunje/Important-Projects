@@ -1,4 +1,4 @@
-## migrate exixting application from on premises to cloud
+## migrate existing application from on premises to cloud
 
 # Export your virtual machin image with extention of OVA   
 
