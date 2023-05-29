@@ -7,6 +7,9 @@
 - it prevents noncompliant resources being created
 - Azure Policy also evaluates and monitors all current VMs in your environment = resizing exixzting vm
 
+# Azure initiative
+- azure initiative is a collection of Azure policy. 
+- initiative simplify the management of your policy by grouping policy.
 
 # resource group 
 - A resource group is a collection of resources that share the same lifecycle, permissions, and policies.
