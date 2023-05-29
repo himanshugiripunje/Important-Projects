@@ -28,4 +28,8 @@
 
 # resource group 
 - A resource group is a collection of resources that share the same lifecycle, permissions, and policies.
-- 
+
+# azure policy initiative?
+-  Azure Policy includes an initiative named Enable Monitoring in Azure Security Center. Its goal is to monitor all of the available security recommendations for all Azure resource types in Azure Security Center.
+-  Enable Monitoring in Azure Security Center initiative contains over 100 separate policy definitions.
+-  Azure Policy also includes initiatives that support regulatory compliance standards, such as HIPAA and ISO 27001.
