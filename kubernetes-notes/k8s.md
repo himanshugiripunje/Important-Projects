@@ -47,3 +47,23 @@ Ingress Controllers
 Daemonset:
 - Ensures a copy of a Pod is running across a set of nodes in a cluste
 - Used to deploy system daemons such as log collectors and monitoring agents that typically must run on every Node.
+
+
+## what is Prometheus and grafana?
+- Prometheus and Grafana are the major monitoring system in open source space that is used by alot of big and small organization.
+
+- Prometheus and Grafana ecosystem has components like Alert Manager, Push gateway, Prometheus as TSDB and Grafna as visualization tool. Apart from these there are other tools that can be used to support the scale like Thanos, Mimir, Trickster, etc.
+
+- Below is a basic architecture of Grafana and Prometheus based monitoring solution.
+
+![image](https://github.com/himanshugiripunje/Theory-notes/assets/99471014/c459c0b4-719d-4325-8ede-e7a4ae3fc7ce)
+
+
+
+
+
+
+
+
+
+
