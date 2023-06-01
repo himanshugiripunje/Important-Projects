@@ -8,6 +8,8 @@ service:
 uses of service:
 - You use a Service to make that set of Pods available on the network so that clients can interact with it.
 
+`A sidecar` :
+- is a separate container that runs alongside an application container in a Kubernetes pod – a helper application of sorts.
 
 `clusterip address`:
 - Provides static Ip address.
