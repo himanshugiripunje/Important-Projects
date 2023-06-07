@@ -12,6 +12,7 @@
 ## Docker container?
 - as discussed docker image is read-only image, that can't be executed by themselves or cannot run/start.
 - container is nothing but a box that has ability to run any image.
+- It provides a runtime environment(act as small operating systems and provide all the functionality necessary for a program to run.) in a single container.
 - when creat docker container you essentialy endup creating a read-write copy of filesystem inside container.
 
 
