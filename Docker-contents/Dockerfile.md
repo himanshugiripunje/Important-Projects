@@ -120,7 +120,20 @@
  Example:
  FROM Ubuntu
  ENTRYPOINT exec top -b ---      > why exec is there 
- 
+ # why cmd
+ - The use of CMD as a best practice in Docker is recommended for several reasons:
+
+1. Flexibility: CMD allows users to easily override the default command when running a container. By specifying the default command using CMD, users can easily modify or extend the behavior of the container without needing to modify the Dockerfile itself. This flexibility is valuable in various scenarios, such as running the container with different startup options or executing additional commands alongside the default command.
+
+2. Composability: CMD promotes the concept of creating composable containers. By separating the default command from the Dockerfile, you can build reusable images that can serve as a base for other containers. Users can extend or customize the behavior of the base image by specifying their own command during container runtime.
+
+3. Debugging and troubleshooting: When using CMD, it's easier to troubleshoot and debug containers. If you encounter issues with the container's startup or execution, you can override the CMD and execute alternative commands to investigate the problem without modifying the Dockerfile. This approach simplifies the debugging process and provides greater flexibility in identifying and resolving issues.
+
+4. Testing and development: CMD is particularly useful during testing and development phases. It allows developers to define a default command that reflects the typical usage of the containerized application. Developers can then focus on writing and testing application code without worrying about specifying the command every time they run the container.
+
+5. Compliance with the 12-factor app methodology: The 12-factor app methodology, which provides guidelines for building modern and scalable applications, recommends keeping the application's configuration separate from the code. By using CMD instead of hardcoding the command in the Dockerfile, you adhere to this principle and enable easy configuration changes and command overrides.
+
+By following the best practice of using CMD in Docker, you ensure greater flexibility, composability, ease of debugging, and adherence to best practices like the 12-factor app methodology. It ultimately results in more maintainable, reusable, and scalable Docker images and containers.
  # Understand  how CMD And ENTRYPOINT interact
  
  - Both cmd & entrypoint instruction tells what comand get executed while running containeer
