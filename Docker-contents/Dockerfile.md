@@ -125,7 +125,7 @@
 
 1. Flexibility: CMD allows users to easily override the default command when running a container. By specifying the default command using CMD, users can easily modify or extend the behavior of the container without needing to modify the Dockerfile itself. This flexibility is valuable in various scenarios, such as running the container with different startup options or executing additional commands alongside the default command.
 
-2. Composability: CMD promotes the concept of creating composable containers. By separating the default command from the Dockerfile, you can build reusable images that can serve as a base for other containers. Users can extend or customize the behavior of the base image by specifying their own command during container runtime.
+2. Composability: CMD promotes the concept of creating composable containers. By separating the default command from the Dockerfile, you can build reusable images that can serve as a base for other containers. Users can extend or customize the behavior of the base image by specifying their own command during container runtime
 
 3. Debugging and troubleshooting: When using CMD, it's easier to troubleshoot and debug containers. If you encounter issues with the container's startup or execution, you can override the CMD and execute alternative commands to investigate the problem without modifying the Dockerfile. This approach simplifies the debugging process and provides greater flexibility in identifying and resolving issues.
 
