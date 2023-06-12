@@ -43,3 +43,20 @@ between two computer applications operating on the same hardware device or betwe
 - `Wide Adoption`: RESTful APIs have become the de facto standard for building web services due to their simplicity, scalability, and widespread adoption. Many modern web applications, mobile apps, and third-party services provide APIs following REST principles, making it easier to integrate and interact with their systems.
 
 - `Statelessness`: RESTful APIs are stateless, meaning that each request is independent and does not rely on the server storing any client-specific information between requests. This simplifies the server's implementation and allows for improved reliability and scalability
+
+
+
+
+
+
+# How REST APIs work
+- REST APIs communicate via HTTP requests to perform standard database functions like creating, reading, updating, and deleting records (also known as CRUD) within a resource.
+- For example, a REST API would use a GET request to retrieve a record, a POST request to create one, a PUT request to update a record, and a DELETE request to delete one. All HTTP methods can be used in API calls. 
+- The state of a resource at any particular instant, or timestamp, is known as the resource representation.
+- This information can be delivered to a client in virtually any format including JavaScript Object Notation (JSON), HTML, XLT, Python, PHP, or plain text.
+- JSON is popular because it’s readable by both humans and machines—and it is programming language-agnostic.
+
+
+
+
+
