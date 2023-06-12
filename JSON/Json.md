@@ -56,6 +56,20 @@ between two computer applications operating on the same hardware device or betwe
 - This information can be delivered to a client in virtually any format including JavaScript Object Notation (JSON), HTML, XLT, Python, PHP, or plain text.
 - JSON is popular because it’s readable by both humans and machines—and it is programming language-agnostic.
 
+# The Headers
+- Headers are used to provide information to both the client and server. It can be used for many purposes, such as authentication and providing information about the body content
+- HTTP Headers are property-value pairs that are separated by a colon
+        
+        - "Content-Type: application/json". Missing the opening ".
+- You can send HTTP headers with curl through the -H or --header option. To send the above header to Github’s API, you use this command:
+
+        curl -H "Content-Type: application/json" https://api.github.com
+        
+ ## why header?
+ - HTTP headers let the client and the server pass additional information with an HTTP request or response.
+ - Client hints:
+- HTTP Client hints are a set of request headers that provide useful information about the client such as device type and network conditions, and allow servers to optimize what is served for those conditions.
+
 
 
 
