@@ -44,3 +44,9 @@ https://lnkd.in/dRXZVggt
 11. Deploy Disaster Recovery of Workloads on AWS: Warm Standby
 
 https://lnkd.in/dx3aY9VJ
+
+Data analyst
+12. youtube.com/watch?v=iwUli5gIcU0
+13. https://www.youtube.com/watch?v=r-uOLxNrNk8
+
+
