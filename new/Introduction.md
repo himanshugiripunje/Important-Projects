@@ -1,5 +1,5 @@
 -- hi my name is himanshu giripunje i have completed my graduation at 2021 and currently i am working as a devops engineer in upfinite software development india pvt. ltd.
-- having 1+ years of experience as a devops engineer, as devops engineer i worked on various devops tools like git github as a version control tool, ansible as a configuration management, terraform as a infrastructure management, jenkins as cicd, sonarqube as a testing tool
+- having 2+ years of experience as a devops engineer, as devops engineer i worked on various devops tools like git github as a version control tool, ansible as a configuration management, terraform as a infrastructure management, jenkins as cicd, sonarqube as a testing tool
 - maven as build tool, 
 - also having good sound knowledge of container technology like docker and kubernetes
 - better understanding of devops and agile methodology, 
