@@ -5,3 +5,15 @@ https://medium.com/@sushantkapare1717/kubernetes-interview-questionspart-iii-617
 
 # why build is happen in java projects
 - when you build project, for downloading the dependencies.
+
+*Frontend languages*
+- java
+- javascript
+- css
+- html
+- typescript
+- react
+- python
+- node.js = javacript runtime env
+-  
+- 
