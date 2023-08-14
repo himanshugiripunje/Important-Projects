@@ -41,3 +41,23 @@ If SNAT disabled, the IP address allocated to a Pod is routable inside the VPC. 
 https://www.learnsteps.com/kubernetes-upgrade-failure-story-how-a-cni-config-caused-havoc-in-our-redis-infrastructure/ 
 
 ![image](https://github.com/himanshugiripunje/Theory-notes/assets/99471014/e67a6d5c-4045-433f-8912-762606b48c35)
+
+
+#How Pods Communicate with Each Other:
+
+- Because each pod has a unique IP in a flat address space inside the Kubernetes cluster, direct pod-to-pod communication is possible without requiring any kind of proxy or address translation. This also allows using standard ports for most applications as there is no need to route traffic from a host port to a container port, as in Docker. Note that because all containers in a pod share the same IP address, container-private ports are not possible (containers can access each other’s ports via localhost:<port>) and port conflicts are possible. However, the typical use case for a pod is to run a single application service (in a similar fashion to a VM), in which case port conflicts are a rare situation.
+
+# How Pods Communicate with Services
+- Kubernetes services allow grouping pods under a common access policy (for example, load-balanced). The service gets assigned a virtual IP which pods outside the service can communicate with. Those requests are then transparently proxied (via the kube-proxy component that runs on each node) to the pods inside the service. Different proxy-modes are supported.
+
+# Network
+===================
+- iptables: kube-proxy installs iptables rules trap access to service IP addresses and redirect them to the correct pods.
+userspace: kube-proxy opens a port (randomly chosen) on the local node. Requests on this “proxy port” get proxied to one of the service’s pods (as retrieved from Endpoints API).
+ipvs (from Kubernetes 1.9): calls netlink interface to create ipvs rules and regularly synchronizes them with the Endpoints API.
+Kubernetes also offers an Endpoints API for Kubernetes native applications that is updated whenever the set of pods in a service changes. This allows a pod to retrieve the current endpoints for all pods in a service.
+
+- Incoming Traffic from the Outside World
+Nodes inside a Kubernetes cluster are firewalled from the Internet by default, thus services IP addresses are only targetable within the cluster network. In order to allow incoming traffic from outside the cluster, a service specification can map the service to one or more externalIPs (external to the cluster). Requests arriving at an external IP address get routed by the underlying cloud provider to a node in the cluster (usually via a load balancer outside Kubernetes). The node then knows which service is mapped to the external IP and also which pods are part of the service, thus routing the request to an appropriate pod.
+
+- To support more complex policies on incoming traffic, Kubernetes provides an Ingress API offering externally-reachable URLs, traffic load balancing, SSL termination, and name based virtual hosting to services. An ingress is a collection of rules that allow inbound connections to reach the cluster service. Note that to actually action ingresses specified via the API, an ingress controller (such as the NGINX ingress controller) must be deployed and configured for the cluster.
