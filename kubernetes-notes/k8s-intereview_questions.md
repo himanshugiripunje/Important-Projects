@@ -43,7 +43,7 @@ https://www.learnsteps.com/kubernetes-upgrade-failure-story-how-a-cni-config-cau
 ![image](https://github.com/himanshugiripunje/Theory-notes/assets/99471014/e67a6d5c-4045-433f-8912-762606b48c35)
 
 
-#How Pods Communicate with Each Other:
+# How Pods Communicate with Each Other:
 
 - Because each pod has a unique IP in a flat address space inside the Kubernetes cluster, direct pod-to-pod communication is possible without requiring any kind of proxy or address translation. This also allows using standard ports for most applications as there is no need to route traffic from a host port to a container port, as in Docker. Note that because all containers in a pod share the same IP address, container-private ports are not possible (containers can access each other’s ports via localhost:<port>) and port conflicts are possible. However, the typical use case for a pod is to run a single application service (in a similar fashion to a VM), in which case port conflicts are a rare situation.
 
