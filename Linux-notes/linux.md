@@ -16,3 +16,27 @@
                 - lsof -i  | grep LISTEN      < it only gives you the what are the ports are open to access, "systemd-127.0.0.1", 
                 - ss -tulpn | grep LISTEN
                 - netstat -tulpn | grep ':80'
+
+# find the empty directories in linux?
+        find /path/to/directory -type d -empty
+`with python scripts` 
+                                               
+                                        import os
+
+                                                def find_empty_directories(directory):
+                                                    empty_dirs = []
+                                                
+                                                    for root, dirs, files in os.walk(directory, topdown=False):
+                                                        for dir_name in dirs:
+                                                            dir_path = os.path.join(root, dir_name)
+                                                            if not os.listdir(dir_path):
+                                                                empty_dirs.append(dir_path)
+                                                
+                                                    return empty_dirs
+                                                
+                                                directory_path = '/path/to/directory'
+                                                empty_dirs = find_empty_directories(directory_path)
+                                                
+                                                for dir_path in empty_dirs:
+                                                    print(dir_path)
+
