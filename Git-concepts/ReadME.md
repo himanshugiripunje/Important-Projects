@@ -11,3 +11,7 @@
 
 
       - git clone -v branch_name repo_url
+
+# How To Untrack the file
+
+            git rm --cached my_file
