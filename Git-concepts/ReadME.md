@@ -15,3 +15,24 @@
 # How To Untrack the file
 
             git rm --cached my_file
+
+# how to undoing the changes
+- It is quite possible that you might make some mistake while working on a project.
+- Git has two commands to undo your changes yu made.
+
+1. `Reset` - It enables you to revert recent changes you made.
+2. `revert`
+
+         git reset --soft HEAD-1
+            git reset <reset_type> HEAD-<number of commits to undo>
+
+   `types of field allow following`
+- Soft: uncommit and keep (staged) changes
+- hard: uncommit and delete changes
+
+REVERT
+
+- Every commit associated with a `hash`
+
+
+
