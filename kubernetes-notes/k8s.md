@@ -65,7 +65,8 @@ Daemonset:
 
              kubectl delete -f  quota.yml
 # Create new with manifests file?
-- kubectl create -f deployment.yml
+      - kubectl create -f deployment.yml
+      - kubectl get resourcequotas
 
 
 
