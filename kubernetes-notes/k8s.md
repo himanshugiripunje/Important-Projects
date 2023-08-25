@@ -63,10 +63,6 @@ Daemonset:
 ## what is mean by resource quota ?
 - provides constraints that limit aggregate resource consumption per namespace.
 
-             kubectl delete -f  quota.yml
-# Create new with manifests file?
-      - kubectl create -f deployment.yml
-      - kubectl get resourcequotas
 
 
 
