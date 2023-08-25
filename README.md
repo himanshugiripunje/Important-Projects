@@ -1,4 +1,4 @@
-## My live Project 
+## my 
 
 One project that comes  is a web application that was built to provide a platform for online shopping. The application was built using microservices architecture, and each microservice was packaged as a Docker container.
 
