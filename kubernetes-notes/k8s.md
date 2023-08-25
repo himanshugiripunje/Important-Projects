@@ -60,7 +60,8 @@ Daemonset:
 
 ![image](https://github.com/himanshugiripunje/Theory-notes/assets/99471014/c459c0b4-719d-4325-8ede-e7a4ae3fc7ce)
 
-
+## what is mean by resource quota ?
+- provides constraints that limit aggregate resource consumption per namespace.
 
 
 
