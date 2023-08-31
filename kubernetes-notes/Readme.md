@@ -18,4 +18,30 @@
 # 
     - kubectl get ns
     - kubectl describe ns quota
+    
+     - kubectl get pods 
+for listing no. of pods
 
+      - kubectl describe pod pod_name
+detailed info about pod
+
+
+# pod-defination.yml
+
+				apiVersion:
+				kind:
+				metadata:
+				   name: myapp_pod	*dictionary*
+				   labels:
+				        app: myapp
+					type: front-end
+				spec:
+				   containers:
+				      - name: nginx-controller       *list*
+				      	image: nginx
+
+# 
+1. right api version for right `object`
+2. kind - what kind of object, rs, pod, k=
+3. metadata -  data above the object like `Name` `label`
+4. 
