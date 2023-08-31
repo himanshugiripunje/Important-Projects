@@ -7,7 +7,8 @@
 # describe the resource quotas ?
     - kubectl describe quota
 
-# Kubectl explain resourcequota
+		Kubectl explain resourcequota
+  
 > it will display the apiVersion   kind 
 
 # kubectl run app --image=nginx:alpine
@@ -25,7 +26,8 @@ for listing no. of pods
       - kubectl describe pod pod_name
 detailed info about pod
 
-
+		kubectl run nginx --image=nginx --dry-run=client -o yaml
+  it generated the yaml file on th output.
 # pod-defination.yml
 
 				apiVersion:
