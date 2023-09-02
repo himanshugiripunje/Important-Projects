@@ -47,3 +47,20 @@ detailed info about pod
 2. kind - what kind of object, rs, pod, k=
 3. metadata -  data above the object like `Name` `label`
 4. 
+
+# container installation
+
+Command to install contained:-
+   17  dnf update -y
+     dnf install -y  yum-utils device-mapper-persistent-data lvm2
+     dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+     dnf update -y && dnf install -y containerd.io
+     mkdir -p /etc/containerd
+     containerd config default > /etc/containerd/config.toml
+     systemctl restart containerd
+     systemctl status containerd
+     systemctl enable containerd
+
+# not installing containerD `issue`
+podman 
+buildah
