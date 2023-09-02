@@ -52,14 +52,14 @@ detailed info about pod
 
 Command to install contained:-
    17  dnf update -y
-     dnf install -y  yum-utils device-mapper-persistent-data lvm2
-     dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
-     dnf update -y && dnf install -y containerd.io
-     mkdir -p /etc/containerd
-     containerd config default > /etc/containerd/config.toml
-     systemctl restart containerd
-     systemctl status containerd
-     systemctl enable containerd
+			     dnf install -y  yum-utils device-mapper-persistent-data lvm2
+			     dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+			     dnf update -y && dnf install -y containerd.io
+			     mkdir -p /etc/containerd
+			     containerd config default > /etc/containerd/config.toml
+			     systemctl restart containerd
+			     systemctl status containerd
+			     systemctl enable containerd
 
 # not installing containerD `issue`
 podman 
