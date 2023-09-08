@@ -1,4 +1,8 @@
-## my 
+## what is difference between podman and docker?
+- ## Why is Podman more secure than Docker?
+- Podman is more secure than Docker because of its daemon-less architecture, which makes it rootless.
+- The rootless architecture of Podman allows users to work on their own containers or pods without interfering with other containers.
+- It is also useful in stopping attackers from accessing servers that require root access.
 
 One project that comes  is a web application that was built to provide a platform for online shopping. The application was built using microservices architecture, and each microservice was packaged as a Docker container.
 
