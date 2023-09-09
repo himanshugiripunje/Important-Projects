@@ -1,3 +1,11 @@
+# coommands
+-  kubectl get csr | grep Pending
+  369  kubectl get csr | grep Pending | less
+  370  kubectl adm certificate approve 
+
+
+
+
 ## K8s Commands
              
              kubectl delete -f  quota.yml
