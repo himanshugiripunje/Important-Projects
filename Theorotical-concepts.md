@@ -54,8 +54,10 @@ core:
 -  ram is required to function the computer.
 
 # stateless vs statefull
-stateless: A stateless system sends a request to the server and relays the response (or the state) back without storing any information.
-statefull: stateful systems expect a response, track information, and resend the request if no response is received 
+stateless:
+- A stateless system sends a request to the server and relays the response (or the state) back without storing any information.
+- Stateless applications don't need to preserve the application or user data on the disk volume. Although stateless applications may write the data to the filesystem while a container exists, it is not important in terms of the application's life cycle
+`statefull`: stateful systems expect a response, track information, and resend the request if no response is received 
 
 ## Application layer :
 - It is the Layer through which user interact.
