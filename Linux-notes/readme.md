@@ -16,6 +16,34 @@
                 - lsof -i  | grep LISTEN      < it only gives you the what are the ports are open to access, "systemd-127.0.0.1", 
                 - ss -tulpn | grep LISTEN
                 - netstat -tulpn | grep ':80'
+                 - nc -zv ip port
+** Network troubleshooting commands ** 
+
+
+netstat -plunt | grep "listen"
+
+
+
+/////How can I verify which ports are listening on Linux server?/ How to check if port is in use in
+
+ $ nc -zv localhost 2379
+ 
+ $ netstat -plunt | grep "2379"
+
+////find the empty directory inside linux?
+$ find /path/to/directory -type d -empty
+
+
+search pattern in linux.
+$ grep  -i "error" /var/log/messages
+
+
+FIND disk type of linux
+
+/usr/sbin/lspci | grep SATA
+
+available disk in linux
+$ lscsi
 
 # find the empty directories in linux?
         find /path/to/directory -type d -empty
