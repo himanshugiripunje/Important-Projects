@@ -21,10 +21,11 @@
 
 
 netstat -plunt | grep "listen"
+# edit file via sed command
+                
+                sed 's/unix/linux/' geekfile.txt
 
-
-
-/////How can I verify which ports are listening on Linux server?/ How to check if port is in use in
+# /How can I verify which ports are listening on Linux server?/ How to check if port is in use in
 
  $ nc -zv localhost 2379
  
