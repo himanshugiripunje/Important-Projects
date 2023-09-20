@@ -3,7 +3,8 @@
   369  kubectl get csr | grep Pending | less
   370  kubectl adm certificate approve 
 
-
+# domain to ip resolution checking ?
+- nslookup citiuscloud.com
 
 
 ## K8s Commands
