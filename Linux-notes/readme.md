@@ -1,3 +1,9 @@
+
+# shell commands:
+- it will kill all processes named proc
+                
+                killall proc
+                
 # To review boot messages in Linux:
 - you can follow these steps:
 
