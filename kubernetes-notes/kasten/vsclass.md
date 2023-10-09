@@ -1,3 +1,5 @@
+vol-snap.yml
+      
       apiVersion: snapshot.storage.k8s.io/v1
       deletionPolicy: Delete
       driver: csi.nutanix.com
