@@ -84,3 +84,14 @@ $ lscsi
  
  
         helm install k10 kasten/k10 --namespace=kasten-io --version=5.5.6 --set global.persistence.storageClass=<storage-class-name> --set eula.accept=true  --set eula.company="COMPANY NAME" --set eula.email="COMPANY EMAIL"
+
+
+# DNS SERVER SETUP
+
+- Open Server Manager & Add roles & features--> Select deafult & go ahead  check if we have correct hostname & IP --> Select Active Dir, DNS & add these features inside Add Roles & Features Wizard.
+After adding features click on Promote this server to domain & inside add new forest enter citiuscloud.com
+Inside Domain Controller Options give Password
+Inside NETBIOS Name we will see CITIUSCLOUD as by deafult name
+Check on pre-requites cgeck & once its green click on install
+Once everything is done we can see Citius cloud written insie Network Configiuration
+To check if everything is correct then run the command --> nslookup (We use Nslookup command to check DNS)
