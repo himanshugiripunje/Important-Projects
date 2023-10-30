@@ -1,4 +1,7 @@
-
+# HOW TO GIVE SPACE IN VI EDITOR   
+        :set  nu
+        :5,11s/^/ <space that you want to give> /
+        :set nonu
 # shell commands:
 - it will kill all processes named proc
                 
