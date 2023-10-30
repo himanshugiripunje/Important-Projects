@@ -78,3 +78,9 @@ $ lscsi
                                                 for dir_path in empty_dirs:
                                                     print(dir_path)
 
+# K10 login not found
+
+`when kasten login not found`
+ 
+ 
+        helm install k10 kasten/k10 --namespace=kasten-io --version=5.5.6 --set global.persistence.storageClass=<storage-class-name> --set eula.accept=true  --set eula.company="COMPANY NAME" --set eula.email="COMPANY EMAIL"
