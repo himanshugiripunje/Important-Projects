@@ -1,3 +1,11 @@
+# pipe command
+        ls  | wc -l
+ls act as input to wc `command`
+
+
+
+
+
 # HOW TO GIVE SPACE IN VI EDITOR   
         :set  nu
         :5,11s/^/ <space that you want to give> /
