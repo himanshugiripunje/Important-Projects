@@ -2,7 +2,9 @@
         ls  | wc -l
 ls act as input to wc `command`
 
-
+# tee command
+- it reads standard input writes it to one or more files.
+          ls | tee file1 file2
 
 
 
