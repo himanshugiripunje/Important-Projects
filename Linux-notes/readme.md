@@ -42,6 +42,7 @@ ls act as input to wc `command`
 
 netstat -plunt | grep "listen"
 # edit file via sed command
+`SED`
                 
                 sed 's/unix/linux/' geekfile.txt
 
