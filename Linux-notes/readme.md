@@ -41,16 +41,14 @@ ls act as input to wc `command`
 
 
 netstat -plunt | grep "listen"
-# edit file via sed command
-`SED`
+# sed command
+
                 
                 sed 's/unix/linux/' geekfile.txt
 
-# /How can I verify which ports are listening on Linux server?/ How to check if port is in use in
 
- $ nc -zv localhost 2379
  
- $ netstat -plunt | grep "2379"
+
 
 ////find the empty directory inside linux?
 $ find /path/to/directory -type d -empty
@@ -67,28 +65,6 @@ FIND disk type of linux
 available disk in linux
 $ lscsi
 
-# find the empty directories in linux?
-        find /path/to/directory -type d -empty
-`with python scripts` 
-                                               
-                                        import os
-
-                                                def find_empty_directories(directory):
-                                                    empty_dirs = []
-                                                
-                                                    for root, dirs, files in os.walk(directory, topdown=False):
-                                                        for dir_name in dirs:
-                                                            dir_path = os.path.join(root, dir_name)
-                                                            if not os.listdir(dir_path):
-                                                                empty_dirs.append(dir_path)
-                                                
-                                                    return empty_dirs
-                                                
-                                                directory_path = '/path/to/directory'
-                                                empty_dirs = find_empty_directories(directory_path)
-                                                
-                                                for dir_path in empty_dirs:
-                                                    print(dir_path)
 
 # K10 login not found
 
